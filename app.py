@@ -5,5 +5,4 @@ if st.button("Predict next close"):
     r = requests.get(f"{api_url}/predict/live",
                      params={"symbol": symbol})
     data = r.json()
-    st.metric("Predicted next close",
-    data["predicted_next_close"])
+    st.metric("Predicted next close")
